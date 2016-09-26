@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("input.search").focus(function(){
+                $(this).val("");
+            });
+            $("input.search").blur(function(){
+                $(this).val("请输入名称或编号");
+            });
+
+//            客服聊天窗口隐藏与显示
+            $("div#customer_service_arrow").click(function(){
+                $("div#customer_service").toggle(100);
+            });
+        });
+
+    </script>
+
+
+    <link rel="shortcut icon" href="images/logo.png" />
+    <!--<link rel="icon" href="images/p2.gif" type="image/gif" />-->
+    <title>山东爱亿普环保科技有限公司-脱硝催化剂,脱二噁英催化剂,内燃机脱硝,船用脱硝</title>
+    <!--用于百度搜索验证-->
+    <meta name="baidu-site-verification" content="rvpxZgD240" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_top" style="background: url('images/header_top.png')"></div>
+            <div class="header_logo">
+                <a href="index.html"><img src="images/logo.jpg"></a>
+            </div>
+        <div class="header_r">
+            <form class="header_search">
+                <input type="text" class="search" value="请输入名称或编号">
+                <img src="images/search.jpg">
+            </form>
+            <div class="nav_fir">
+                <ul class="nav_fir" id="nav_fir">
+                    <li class="nav_fir_detail"><a href="index.html" title="首页">首页</a></li>
+                    <li class="nav_fir_detail"><a href="about_us.html" title="关于我们">关于我们</a>
+                        <ul class="nav_sub_detail nav_sub1">
+                            <li><a href="#">企业概况</a></li>
+                            <li><a href="#">CTO致辞</a></li>
+                            <li><a href="#">荣誉资质</a></li>
+                            <li><a href="#">企业文化</a></li>
+                            <li><a href="#">大事记</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_fir_detail"><a href="products.html" title="产品中心">产品中心</a>
+                        <ul class="nav_sub_detail nav_sub2" >
+                            <li><a href="#">脱硝/脱二噁英催化剂</a></li>
+                            <li><a href="#">分子筛脱硝催化剂</a></li>
+                            <li><a href="#">NOx/O2/NH3在线检测系统</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_fir_detail"><a href="engineering.html" title="工程及服务">工程及服务</a>
+                        <ul class="nav_sub_detail nav_sub3" >
+                            <li><a href="#">船用SCR脱硝系统</a></li>
+                            <li><a href="#">催化剂再生</a></li>
+                            <li><a href="#">内燃机DPF/SCR系统</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_fir_detail"><a href="innovations.html" title="科技创新">科技创新</a>
+                        <ul class="nav_sub_detail nav_sub4" >
+                            <li><a href="#">科技创新体系</a></li>
+                            <li><a href="#">移动检测车</a></li>
+                            <li><a href="#">SCR技术</a></li>
+                            <li><a href="#">DPF/SCR技术</a></li>
+                            <li><a href="#">SCO/OXI</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_fir_detail"><a href="news.html" title="新闻中心">新闻中心</a>
+                        <ul class="nav_sub_detail nav_sub5" >
+                            <li><a href="#">公司新闻</a></li>
+                            <li><a href="#">行业新闻</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_fir_detail"><a href="contact.html" title="联系我们">联系我们</a>
+                        <ul class="nav_sub_detail nav_sub6" >
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">在线留言</a></li>
+                            <li><a href="#">资料下载</a></li>
+                            <li><a href="#">招贤纳才</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--下面制作轮播器，包括自动播放以及点击变换PPT-->
+    <div id="content1">
+        <div id="container">
+            <div id="list" style="left:-1366px;">
+                <img src="images/baner4.jpg" alt="1">
+                <img src="images/baner1.jpg" alt="1">
+                <img src="images/baner2.jpg" alt="2">
+                <img src="images/baner3.jpg" alt="3">
+                <img src="images/baner4.jpg" alt="4">
+                <img src="images/baner1.jpg" alt="4">
+
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+                <span index="4"></span>
+            </div>
+            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+        </div>
+    </div>
+
+    <div id="content2">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#">
+                            <img src="images/k1.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="images/k2.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="images/k3.jpg">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="images/k4.jpg">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!--制作在线客服代码-->
+    <div id="float_window">
+        <div id="customer_service">
+            <div id="customer_service_top">
+                <h4>在线客服</h4>
+            </div>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=806794421&site=qq&menu=yes">
+                <img border="0" src="http://wpa.qq.com/pa?p=2:806794421:51" alt="点击这里给我发消息" title="点击这里给我发消息"/>
+            </a>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=806794421&site=qq&menu=yes">
+                <img border="0" src="http://wpa.qq.com/pa?p=2:806794421:51" alt="点击这里给我发消息" title="点击这里给我发消息"/>
+            </a>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=806794421&site=qq&menu=yes">
+                <img border="0" src="http://wpa.qq.com/pa?p=2:806794421:51" alt="点击这里给我发消息" title="点击这里给我发消息"/>
+            </a>
+        </div>
+        <div id="customer_service_arrow" style="background-image: url('images/online_arrow_r.jpg'); width: 50px;height: 50px;float: right;">
+
+        </div>
+    </div>
+
+
+    <div id="content3">
+        <table>
+            <tbody>
+                <tr>
+                    <td id="left" class="summary">
+                        <p class="header">爱亿普环保</p>
+                        <p class="details">爱亿普环保成立于2013年1月，致力于固定源以及移动源的大气污染治理，通过不断进行技术创新，
+                            以专业的工程技术以及优异的产品品质，为客户创造价值。公司的业务包括船舶行业、分布式能源、
+                            固定式能源等领域，目前在国内运行的脱硝设备超过80台/套。</p>
+                        <p class="details">
+                            爱亿普环保致力于烟气净化技术的研发和产业化应用，针对产业链分工不同设立南京爱亿普环保科技
+                            有限公司及山东爱亿普环保科技有限公司，南京公司主要从事环保工程的设计与咨询，山东公司从事
+                            脱硝脱二噁英特种陶瓷催化剂的生产与销售，现有生产线具备年产4000立方米的生产能力。是目前
+                            中石化系统合格供应商、中国脱硝产业联盟会员单位、中国城市燃气协会分布式能源专业委员会会员单位。</p>
+                    </td>
+                    <td id="right" class="about_img">
+                        <a>
+                            <img src="images/about_img.jpg">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="content4" class="applications" style="background: url('images/probg.jpg')">
+        <div class="top">
+            <p style="text-align: center; font-size: larger; margin-top: 30px; margin-bottom: 5px"><strong>产品应用</strong></p>
+            <p style="text-align: center; font-size:medium">PRODUCTS CENTER</p>
+        </div>
+        <div class="sub_content">
+            <div class="img img1" >
+                <a href="#"><div class="image image1" style="width: 100%; height: 100%;"></div></a>
+            </div>
+            <div class="img img1">
+                <a href="#"><div class="image image2" style="width: 100%; height: 100%;"></div></a>
+            </div>
+            <div class="img img1">
+                <a href="#"><div class="image image3" style="width: 100%; height: 100%;"></div></a>
+            </div>
+            <div class="img img1">
+                <a href="#"><div class="image image4" style="width: 100%; height: 100%;"></div></a>
+            </div>
+            <div class="img img1">
+                <a href="#"><div class="image image5" style="width: 100%; height: 100%;"></div></a>
+            </div>
+            <div class="img img1">
+                <a href="#"><div class="image image6" style="width: 100%; height: 100%;"></div></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="content5" class="news">
+        <div id="content5_left">
+            <div id="content_left_top">
+                <ul>
+                    <li><a href="#" style="color: #000000; font-family:微软雅黑,Arial">我公司顺利签订贵州8台瓦斯发电高温脱硝工...</a></li>
+                </ul>
+                <p class="time">2016-08-12</p>
+                <a href="#" style="color: #000000;font-family: 微软雅黑, Arial; text-indent: 2em"><p>详细>></p></a>
+            </div>
+            <div id="content5_left_bottom">
+                <ul>
+                    <li>
+                        <a href="#">清华大学李龙土院士来我公司参观考察</a>
+                        <p style="float: right;margin-right: 10px;">2016-05-31</p>
+                    </li>
+                    <li >
+                        <a href="#">我公司顺利成为中石油合格供应商并签定中石...</a>
+                        <p style="float: right; margin-right: -73px">2016-05-05</p>
+                    </li>
+                    <li>
+                        <a href="#" >我公司顺利签订贵州分布式能源站高温脱硝工...</a>
+                        <p style="float: right;margin-right: -74px;">2016-05-01</p>
+                    </li>
+                    <li>
+                        <a href="#">济南大学化学化工学院来我公司参观学习</a>
+                        <p style="float: right;margin-right: -74px; ">2016-04-15</p>
+                    </li>
+                    <li>
+                        <a href="#">我公司顺利签订湖北沙洋1000t/d玻璃...</a>
+                        <p style="float: right;margin-right: -74px;">2016-01-19</p>
+                    </li>
+                    <li>
+                        <a href="#">我公司顺利签订宁夏130t/h燃气锅炉脱...</a>
+                        <p style="float: right;margin-right: -74px;">2016-01-19</p>
+                    </li>
+                    <li>
+                        <a href="#">我公司顺利完成3x2000KW康明斯发电...</a>
+                        <p style="float: right;margin-right: -74px; ">2016-01-19</p>
+                    </li>
+                    <li>
+                        <a href="#">我公司顺利签订广东英德5x900t/d玻......</a>
+                        <p style="float: right;margin-right: -74px; ">2015-10-25</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--轮播器制作-->
+        <div id="content5_right" style="background-image: url('images/probg.jpg')">
+            <div id="content5_bottom">
+                <div id="content5_list1" style="left:0px">
+                    <div class="img img1">
+                        <img src="images/news1.jpg">
+                    </div>
+                    <div class="img img2">
+                        <img src="images/news2.jpg">
+                    </div>
+                    <div class="img img3">
+                        <img src="images/news3.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="content5_shadow">
+            </div>
+            <div id="content5_subtitle">
+                <div id="content5_list2" style="left:0px;">
+                    <span>清华大学李龙土院士来我公司...</span>
+                    <span>我公司顺利成为中石油合格供应商并签定中石...</span>
+                    <span>我公司顺利签订贵州分布式能源站高温脱硝工...</span>
+                </div>
+            </div>
+            <div id="content5_sequence">
+                <label index = "1" class="content5_label content5_label_on">1</label>
+                <label index = "2" class="content5_label">2</label>
+                <label index = "3" class="content5_label">3</label>
+            </div>
+        </div>
+    </div>
+
+    <!--成功案例，制作轮播效果，实现以下功能：1.自动播放；2.实现过渡效果；3.点击左右按钮可翻页；-->
+    <div id="content6" class="case">
+        <div id="content6_top">
+            <a href="#" ><span style="font-size: larger;"><b>成功案例</b></span></a><br>
+            <p style="color: #008000;font-size: larger; line-height: 2em">CASES</p>
+        </div>
+        <div id="content6_bottom">
+            <div id="content6_left">
+                <img id="img_left" src="images/prev.png">
+            </div>
+            <div id="content6_center">
+                <div id="content6_list" style="left:0px">
+                    <div class="images image1">
+                        <a href="#">
+                            <img src="images/dt.jpg">
+                            <p class="company">
+                                <a href="#">大唐略阳发电厂</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image2">
+                        <a href="#">
+                            <img src="images/fs.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">房山城中供热厂</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image3">
+                        <a href="#">
+                            <img src="images/jj.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">山东金晶玻璃厂</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image4">
+                        <a href="#">
+                            <img src="images/sy.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">山东盛阳集团</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image5">
+                        <a href="#">
+                            <img src="images/sun.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">山东太阳纸业</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image6">
+                        <a href="#">
+                            <img src="images/ty.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">陕西天元化工</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image7">
+                        <a href="#">
+                            <img src="images/tb.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">天津天保热电厂</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image8">
+                        <a href="#">
+                            <img src="images/cl.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">武汉长利玻璃</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image9">
+                        <a href="#">
+                            <img src="images/xr.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">西安热电厂</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image10">
+                        <a href="#">
+                            <img src="images/wk.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">浙江万凯新材料</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image11">
+                        <a href="#">
+                            <img src="images/zh.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">镇海石化</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image12">
+                        <a href="#">
+                            <img src="images/dx.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">福建鼎信科技</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image13">
+                        <a href="#">
+                            <img src="images/hk.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">海科瑞林化工厂</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image14">
+                        <a href="#">
+                            <img src="images/jh.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">海南金海浆纸业</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image15">
+                        <a href="#">
+                            <img src="images/ht.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">合肥统一企业</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image16">
+                        <a href="#">
+                            <img src="images/br.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">济南北郊热电厂</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image17">
+                        <a href="#">
+                            <img src="images/jhz.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">江河纸业</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image18">
+                        <a href="#">
+                            <img src="images/lx.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">龙星化工</a>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="images image19">
+                        <a href="#">
+                            <img src="images/fh.jpg">
+                            <p class="company" style="text-align: center; line-height: 3em">
+                                <a href="#">南京凤凰数据中心</a>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="content6_right">
+                <img id="img_right" src="images/next.png">
+            </div>
+        </div>
+    </div>
+    <div id="content7" class="footer">
+        <div id="top">
+            <div id="left" class="contact">
+                <p style="color: white; font-size: larger">联系我们</p>
+                <p style="color:#a3b371; font-size: larger;">CONTACT US</p>
+                <p>山东爱亿普环保科技有限公司</p>
+                <p>客服电话：400-800-9871  </p>
+                <p>电　　话：0533-8101987   </p>
+                <p>传　　真：0533-8161095  </p>
+                <p><a href="mailto:airep.sd@airep.cn" style="color: #ffffff; text-decoration: none;">邮　　箱：airep.sd@airep.cn</a> </p>
+                <p>地　　址：山东省淄博市桓台县城东寿济路</p>
+            </div>
+            <div id="right" class="qrc">
+                <img src="images/scan1.jpg">
+                <img src="images/scan2.jpg">
+            </div>
+        </div>
+        <div id="bottom" class="copyright">
+            <div id="cnzz">
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ?
+                        " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260446914'%3E%3C/span%3E%3Cscript src='"
+                        + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260446914%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+                </script>
+            </div>
+            <p>Copyright © 2016  <a href="#">爱亿普环保（AIREP）</a>版权所有. 鲁ICP备15040828号  技术支持：<a href="http://www.cathaynova.com">CATHAYNOVA</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
